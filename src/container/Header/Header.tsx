@@ -1,6 +1,6 @@
 import React from "react";
 
-import { SubHeading } from "../../components";
+import { CustomButton, SubHeading } from "../../components";
 import { Images } from "../../constants";
 import "./Header.css";
 
@@ -14,9 +14,7 @@ const Header = () => (
         morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet
         tellus
       </p>
-      <button type="button" className="custom__button">
-        Explore Menu
-      </button>
+      <CustomButton text="Explore Menu" />
     </div>
 
     <div className="app__wrapper_img app__header-img">
