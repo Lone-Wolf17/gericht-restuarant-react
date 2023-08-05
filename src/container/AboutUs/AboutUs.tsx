@@ -2,7 +2,7 @@ import React from "react";
 
 import "./AboutUs.css";
 import { Images } from "../../constants";
-import { CustomButton } from "../../components";
+import { CormorantHeadText, CustomButton, OpenSansParagraph } from "../../components";
 
 const AboutUs = () => (
   <div
@@ -15,9 +15,9 @@ const AboutUs = () => (
 
     <div className="app__aboutus-content flex__center">
       <div className="app__aboutus-content_about">
-        <HeadText text="About Us" />
+        <CormorantHeadText text="About Us" />
         <SpoonImg />
-        <ParagraphText
+        <OpenSansParagraph
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra
           adipiscing ultrices vulputate posuere tristique. In sed odio nec
           aliquet eu proin mauris et."
@@ -30,9 +30,9 @@ const AboutUs = () => (
       </div>
 
       <div className="app__aboutus-content_history">
-        <HeadText text="Our History" />
+        <CormorantHeadText text="Our History" />
         <SpoonImg />
-        <ParagraphText
+        <OpenSansParagraph
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra
     adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu
     proin mauris et."
@@ -43,16 +43,8 @@ const AboutUs = () => (
   </div>
 );
 
-const HeadText = ({ text }: { text: string }) => (
-  <h1 className="headtext__cormorant">{text}</h1>
-);
-
 const SpoonImg = () => (
   <img src={Images.spoon} alt="about_spoon" className="spoon__img" />
-);
-
-const ParagraphText = ({ text }: { text: string }) => (
-  <p className="p__opensans">{text}</p>
 );
 
 export default AboutUs;

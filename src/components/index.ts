@@ -4,6 +4,7 @@ import FooterOverlay from './Footer/FooterOverlay';
 import MenuItem from './Menuitem/MenuItem';
 import Navbar from './Navbar/Navbar';
 import CustomButton from './CustomButton/CustomButton';
+import { CormorantHeadText, OpenSansParagraph, CormorantParagraph } from './Text/Text';
 
 export {
   SubHeading,
@@ -11,5 +12,8 @@ export {
   FooterOverlay,
   MenuItem,
   Navbar,
-  CustomButton
+  CustomButton,
+  CormorantHeadText,
+  CormorantParagraph,
+  OpenSansParagraph,
 };

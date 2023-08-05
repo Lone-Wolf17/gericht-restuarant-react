@@ -1,16 +1,6 @@
+import { Drink, Award } from '../types';
 import images from './images';
 
-type Drink = {
-  title: string;
-  price: string;
-  tags: string
-}
-
-type Award = {
-  imgUrl: string;
-  title: string;
-  subtitle: string;
-};
 
 const wines: Drink[] = [
   {
