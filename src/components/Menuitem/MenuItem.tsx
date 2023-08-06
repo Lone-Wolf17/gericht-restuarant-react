@@ -8,7 +8,7 @@ const MenuItem = ({ drink }: { drink: Drink }) => (
   <div className="app__menuitem">
     <div className="app__menuitem-head">
       <div className="app__menuitem-name">
-        <CormorantParagraph text={drink.title} color="#DCCA87" />
+        <CormorantParagraph text={drink.title} style={{ color: "#DCCA87" }} />
       </div>
       <div className="app__menuitem-dash" />
       <div className="app__menuitem-price">
@@ -17,7 +17,7 @@ const MenuItem = ({ drink }: { drink: Drink }) => (
     </div>
 
     <div className="app__menuitem-sub">
-      <OpenSansParagraph color="#AAAAAA" text={drink.tags} />
+      <OpenSansParagraph text={drink.tags} style={{ color: "#AAAAAA" }} />
     </div>
   </div>
 );

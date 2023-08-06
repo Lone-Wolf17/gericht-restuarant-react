@@ -17,7 +17,7 @@ const AwardCard = ({ award: { imgUrl, title, subtitle } }: AwardCardProps) => (
   <div className="app__laurels_awards-card">
     <img src={imgUrl} alt="award_image" />
     <div className="app__laurels_awards-card_content">
-      <CormorantParagraph color="#DCCA8" text={title} />
+      <CormorantParagraph text={title} style={{ color : "#DCCA8" }} />
       <OpenSansParagraph text={subtitle} />
     </div>
   </div>
