@@ -1,11 +1,12 @@
 import React from "react";
 
 type CustomButtonProps = {
-    text: string
-}
+  text: string;
+  style?: React.CSSProperties;
+};
 
-const CustomButton = ({text}: CustomButtonProps) => (
-  <button type="button" className="custom__button">
+const CustomButton = ({text, style}: CustomButtonProps) => (
+  <button type="button" className="custom__button" style={style}>
     {text}
   </button>
 );
